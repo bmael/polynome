@@ -85,3 +85,12 @@ double Polynome::eval() const{
 
 	return res;
 }
+
+void Polynome::toString(){
+  cout << "degree = " << this->degres_ <<endl;
+    for(int i=0;i<this->degres_;i++){
+      cout << coeff_->get(i) << " * " << x_ << "^" << i;
+      if(i<this->degres_-1) cout << " + ";
+    }
+    cout << endl;
+}

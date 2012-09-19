@@ -19,7 +19,7 @@ class Polynome {
 		
 		
 	public:
-		Polynome(const int & x, const int & degres);
+		Polynome();
 		~Polynome();
 
 		//Getters Setters

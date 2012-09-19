@@ -4,19 +4,33 @@
 
 using namespace std;
 
-void doAction(int action,Polynome * poly){
+/**
+ * Execute the action chosen by the user
+ * */
+void doAction(int action,Polynome *& poly){
  switch(action){
    case 0: return;
 	  break;
 	  
   case 1: poly = new Polynome();
 	  break;
+	  
+  case 2: poly->toString();
+	  break;
+	  
+  case 3: cout << "S = " << poly->eval() << endl;
+	  break;
  }
 }
 
+
+/**
+ *  Main program : Create an empty polynome and display the actions that the 
+ * user can do and finaly execute the action chosen. 
+ **/
 int main(int argc, char ** argv) {
  
-  Polynome * poly;
+  Polynome * poly = 0;
   
   int action;
   //Display the actions that user can do
@@ -38,7 +52,8 @@ int main(int argc, char ** argv) {
     
   }while(action!=0);
   
-  delete poly;
+  if(poly!=0) delete poly; //free the memory
+  
   
 return 0;
 }

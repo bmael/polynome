@@ -33,6 +33,7 @@ class Polynome {
 
 		//Methods
 		double eval() const;
+		void toString();
 	
 };
 #endif

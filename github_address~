@@ -1,1 +1,8 @@
- 
+
+Lien du repository :  
+	  git@github.com:bmael/polynome.git
+	  
+Éviter de saisir sa passhprase a chaque action sur git : 
+	http://www.linux-france.org/prj/edu/archinet/systeme/ch13s03.html 
+	rubrique utiliser un agent ssh.
+
