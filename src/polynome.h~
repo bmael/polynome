@@ -7,7 +7,6 @@
 *	\author Maël BARBIN 
 * 		Julien BIZEUL
 * 		Noémie RULLIER
-* 	\brief Polynome
 **/
 
 #include "contener.h"
