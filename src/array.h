@@ -18,6 +18,4 @@ class Array : public Contener{
 		
 };
 
-// Test de commit depuis Thanatos21
-
 #endif
