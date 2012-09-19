@@ -24,8 +24,8 @@ class LinkedList : public Contener{
 	  LinkedList();
 	  ~LinkedList();
 
-	  void add(const double & data);	// Return the double at the index i
-	  double get(const int & index)const;	// Add a double to the contener
+	  void add(const double & data);	// Add a double to the contener
+	  double get(const int & index)const;	// Return the double at the index i
 		
 };
 
