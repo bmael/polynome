@@ -1,10 +1,15 @@
 #include "linkedlist.h"
 
-
+/**
+ * Construct an empty LinkedList
+ * */
 LinkedList::LinkedList(){
 	p = 0;
 }
 
+/**
+ * \param[in] data a double to add at the end of the LinkedList
+ * */
 void LinkedList::add(const double & data)
 {
    node *q,*t;
@@ -28,6 +33,9 @@ void LinkedList::add(const double & data)
    }
 }
 
+/**
+ * \return  Return the double at the index i
+ * */
 double LinkedList::get(const int & index) const{
 
 	   node *q;

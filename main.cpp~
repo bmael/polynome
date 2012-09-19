@@ -4,6 +4,10 @@
 
 using namespace std;
 
+/**
+ * Execute the action chosen by the user.
+ * \param[in] action the action chosen by the user
+ * */
 void doAction(int action,Polynome *& poly){
  switch(action){
    case 0: return;

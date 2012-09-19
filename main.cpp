@@ -5,7 +5,8 @@
 using namespace std;
 
 /**
- * Execute the action chosen by the user
+ * Execute the action chosen by the user.
+ * \param[in] action the action chosen by the user
  * */
 void doAction(int action,Polynome *& poly){
  switch(action){
@@ -33,6 +34,7 @@ int main(int argc, char ** argv) {
   Polynome * poly = 0;
   
   int action;
+  
   //Display the actions that user can do
   do{
     cout << "##########################" << endl;

@@ -7,7 +7,8 @@ Lien du repository :
 	rubrique utiliser un agent ssh.
 
 Commande de base : 
-    ajouter un fichier : git add <file> (accepte les expressions régulières)
+    ajouter un fichier : 
+	  git add <file> (accepte les expressions régulières)
     
     une fois une partie de code développée et testée (on tente de mettre sur le 
     serveur uniquement des versions stable pour ne pas handicaper les autres) 
@@ -15,8 +16,13 @@ Commande de base :
 	  git commit -m "Titre du commit en anglais si possible"
 	  
     pousser sur le serveur le commit : 
-      git push origin master
+	  git push origin master
       
     récupérer (à faire avant de commencer à travailler sur le projet) la version 
     du projet : 
-	git pull git@github.com:bmael/polynome.git
+	  git pull git@github.com:bmael/polynome.git
+
+    Des fois, il se peut que le "working branch" merde un peu avec les commit, 
+    pas de soucis dans la plupart des cas  : 
+	  git -am "Message du commit"
+    permet de résoudre ce problème.

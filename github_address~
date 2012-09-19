@@ -6,3 +6,17 @@ Lien du repository :
 	http://www.linux-france.org/prj/edu/archinet/systeme/ch13s03.html 
 	rubrique utiliser un agent ssh.
 
+Commande de base : 
+    ajouter un fichier : git add <file> (accepte les expressions régulières)
+    
+    une fois une partie de code développée et testée (on tente de mettre sur le 
+    serveur uniquement des versions stable pour ne pas handicaper les autres) 
+    faire un commit : 
+	  git commit -m "Titre du commit en anglais si possible"
+	  
+    pousser sur le serveur le commit : 
+      git push origin master
+      
+    récupérer (à faire avant de commencer à travailler sur le projet) la version 
+    du projet : 
+	git pull git@github.com:bmael/polynome.git
