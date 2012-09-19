@@ -1,6 +1,11 @@
 Tuto pour mettre en place git:
     https://help.github.com/articles/set-up-git
 
+Pour récupérer le code source
+    git clone git@github:bmael/polynome.git
+    
+    Cette commande va créer dans le dossier courant un dossier polynome contenant tout le code source
+
 Lien du repository :  
 	  git@github.com:bmael/polynome.git
 	  
@@ -22,7 +27,7 @@ Commande de base :
       
     récupérer (à faire avant de commencer à travailler sur le projet) la version 
     du projet : 
-	  git clone git@github.com:bmael/polynome.git
+	  git pull git@github.com:bmael/polynome.git
 
     Des fois, il se peut que le "working branch" merde un peu avec les commit, 
     pas de soucis dans la plupart des cas  : 
