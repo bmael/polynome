@@ -3,8 +3,16 @@
 }
 
 
-\-Inheritance diagram for \-Array\-:
-\nopagebreak
+\hyperlink{class_array}{\-Array} based on std\-::vector.  
+
+
+
+
+{\ttfamily \#include $<$array.\-h$>$}
+
+
+
+\-Inheritance diagram for \-Array\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -13,8 +21,7 @@
 \end{figure}
 
 
-\-Collaboration diagram for \-Array\-:
-\nopagebreak
+\-Collaboration diagram for \-Array\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -24,12 +31,54 @@
 \subsection*{\-Public \-Member \-Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_array_ac53de22eede2969b8c277674aac890dd}{double {\bfseries get} (const int \&index) const }\label{class_array_ac53de22eede2969b8c277674aac890dd}
+\hypertarget{class_array_ae20b3dbb4aa6083679c0dea835abd861}{\hyperlink{class_array_ae20b3dbb4aa6083679c0dea835abd861}{\-Array} ()}\label{class_array_ae20b3dbb4aa6083679c0dea835abd861}
 
+\begin{DoxyCompactList}\small\item\em \-C\-Onstruct an empty \hyperlink{class_array}{\-Array}. \end{DoxyCompactList}\item 
+double \hyperlink{class_array_ac53de22eede2969b8c277674aac890dd}{get} (const int \&index) const 
 \item 
-\hypertarget{class_array_a1911ffe5822c9628a4a8035c93cf8c0d}{void {\bfseries add} (const double \&data)}\label{class_array_a1911ffe5822c9628a4a8035c93cf8c0d}
-
+void \hyperlink{class_array_a1911ffe5822c9628a4a8035c93cf8c0d}{add} (const double \&data)
 \end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{class_array}{\-Array} based on std\-::vector. 
+
+\begin{DoxyAuthor}{\-Author}
+\-Maël \-B\-A\-R\-B\-I\-N \-Julien \-B\-I\-Z\-E\-U\-L \-Noémie \-R\-U\-L\-L\-I\-E\-R 
+\end{DoxyAuthor}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_array_a1911ffe5822c9628a4a8035c93cf8c0d}{\index{\-Array@{\-Array}!add@{add}}
+\index{add@{add}!Array@{\-Array}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Array\-::add} (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_array_a1911ffe5822c9628a4a8035c93cf8c0d}
+
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in}  & {\em data} & a double to add at the end of the \hyperlink{class_array}{\-Array} \\
+\hline
+\end{DoxyParams}
+
+
+\-Implements \hyperlink{class_contener}{\-Contener}.
+
+\hypertarget{class_array_ac53de22eede2969b8c277674aac890dd}{\index{\-Array@{\-Array}!get@{get}}
+\index{get@{get}!Array@{\-Array}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Array\-::get} (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_array_ac53de22eede2969b8c277674aac890dd}
+\begin{DoxyReturn}{\-Returns}
+\-Return the double at the index i
+\end{DoxyReturn}
+\-If the array is empty, then the returned value is 0.\-0 (only temporary!) 
+
+\-Implements \hyperlink{class_contener}{\-Contener}.
+
 
 
 \-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}

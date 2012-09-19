@@ -84,34 +84,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define __POLYNOME_H</span>
 <a name="l00003"></a>00003 <span class="preprocessor"></span>
 <a name="l00004"></a>00004 
-<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;contener.h&quot;</span>
-<a name="l00013"></a>00013 
-<a name="l00014"></a><a class="code" href="class_polynome.html">00014</a> <span class="keyword">class </span><a class="code" href="class_polynome.html">Polynome</a> {
-<a name="l00015"></a>00015   
-<a name="l00016"></a>00016         <span class="keyword">private</span>:
-<a name="l00017"></a>00017           <span class="keywordtype">int</span> x_;
-<a name="l00018"></a>00018           <span class="keywordtype">int</span> degres_;
-<a name="l00019"></a>00019           <a class="code" href="class_contener.html" title="This is an abstract class (can&#39;t do an instance of it)">Contener</a> * coeff_;    
-<a name="l00020"></a>00020 
-<a name="l00021"></a>00021         <span class="keyword">public</span>:
-<a name="l00022"></a>00022           <a class="code" href="class_polynome.html#a48fbfd3cd58c7a6ca4d0dd10d31bf06a" title="Construct a Polynome with an interaction with the user.">Polynome</a>();
-<a name="l00023"></a>00023           <a class="code" href="class_polynome.html#a3f3d7da165b91d8cff44dad28ce58fa2" title="Destroy the Polynome.">~Polynome</a>();
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025           <span class="comment">//Getters Setters</span>
-<a name="l00026"></a>00026           <span class="keywordtype">int</span> <a class="code" href="class_polynome.html#a7aa26c3848398b54060f9a56f0a71115">getX</a>() <span class="keyword">const</span>;
-<a name="l00027"></a>00027           <span class="keywordtype">int</span> <a class="code" href="class_polynome.html#ae38c5a8d6c1e5d042616e85a53089cea">getDegres</a>() <span class="keyword">const</span>;
-<a name="l00028"></a>00028           <a class="code" href="class_contener.html" title="This is an abstract class (can&#39;t do an instance of it)">Contener</a> * <a class="code" href="class_polynome.html#a097ba5df9216e260c0b18040e605db40">getCoeff</a>();
-<a name="l00029"></a>00029 
-<a name="l00030"></a>00030           <span class="keywordtype">void</span> <a class="code" href="class_polynome.html#aa4d6009437e84a04987cce5297afd8d1">setX</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp; x);
-<a name="l00031"></a>00031           <span class="keywordtype">void</span> <a class="code" href="class_polynome.html#ad20d1d98c1d1da1e264ee56c1a72050c">setDegres</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp; degres);
-<a name="l00032"></a>00032           <span class="keywordtype">void</span> <a class="code" href="class_polynome.html#aee44ceb152665f808576e535eddd8267">setCoeff</a>(<a class="code" href="class_contener.html" title="This is an abstract class (can&#39;t do an instance of it)">Contener</a> * coeff);
-<a name="l00033"></a>00033 
-<a name="l00034"></a>00034           <span class="comment">//Methods</span>
-<a name="l00035"></a>00035           <span class="keywordtype">double</span> <a class="code" href="class_polynome.html#aef974533b88294be9b8978709a60908c" title="Compute the Polynome.">eval</a>() <span class="keyword">const</span>;  <span class="comment">// Compute the Polynome </span>
-<a name="l00036"></a>00036           <span class="keywordtype">void</span> <a class="code" href="class_polynome.html#a07fb8401f8d3774957cc23a364280528" title="Print the Polynome on the output.">toString</a>();      <span class="comment">// Print the Polynome on the output</span>
-<a name="l00037"></a>00037         
-<a name="l00038"></a>00038 };
-<a name="l00039"></a>00039 <span class="preprocessor">#endif</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;contener.h&quot;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a><a class="code" href="class_polynome.html">00015</a> <span class="keyword">class </span><a class="code" href="class_polynome.html" title="Polynome.">Polynome</a> {
+<a name="l00016"></a>00016   
+<a name="l00017"></a>00017         <span class="keyword">private</span>:
+<a name="l00018"></a>00018           <span class="keywordtype">int</span> x_;
+<a name="l00019"></a>00019           <span class="keywordtype">int</span> degres_;
+<a name="l00020"></a>00020           <a class="code" href="class_contener.html" title="This is an abstract class (can&#39;t do an instance of it)">Contener</a> * coeff_;    
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022         <span class="keyword">public</span>:
+<a name="l00023"></a>00023           <a class="code" href="class_polynome.html#a48fbfd3cd58c7a6ca4d0dd10d31bf06a" title="Construct a Polynome with an interaction with the user.">Polynome</a>();
+<a name="l00024"></a>00024           <a class="code" href="class_polynome.html#a3f3d7da165b91d8cff44dad28ce58fa2" title="Destroy the Polynome.">~Polynome</a>();
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026           <span class="comment">//Getters Setters</span>
+<a name="l00027"></a>00027           <span class="keywordtype">int</span> <a class="code" href="class_polynome.html#a7aa26c3848398b54060f9a56f0a71115">getX</a>() <span class="keyword">const</span>;
+<a name="l00028"></a>00028           <span class="keywordtype">int</span> <a class="code" href="class_polynome.html#ae38c5a8d6c1e5d042616e85a53089cea">getDegres</a>() <span class="keyword">const</span>;
+<a name="l00029"></a>00029           <a class="code" href="class_contener.html" title="This is an abstract class (can&#39;t do an instance of it)">Contener</a> * <a class="code" href="class_polynome.html#a097ba5df9216e260c0b18040e605db40">getCoeff</a>();
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031           <span class="keywordtype">void</span> <a class="code" href="class_polynome.html#aa4d6009437e84a04987cce5297afd8d1">setX</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp; x);
+<a name="l00032"></a>00032           <span class="keywordtype">void</span> <a class="code" href="class_polynome.html#ad20d1d98c1d1da1e264ee56c1a72050c">setDegres</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp; degres);
+<a name="l00033"></a>00033           <span class="keywordtype">void</span> <a class="code" href="class_polynome.html#aee44ceb152665f808576e535eddd8267">setCoeff</a>(<a class="code" href="class_contener.html" title="This is an abstract class (can&#39;t do an instance of it)">Contener</a> * coeff);
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035           <span class="comment">//Methods</span>
+<a name="l00036"></a>00036           <span class="keywordtype">double</span> <a class="code" href="class_polynome.html#aef974533b88294be9b8978709a60908c" title="Compute the Polynome.">eval</a>() <span class="keyword">const</span>;  <span class="comment">// Compute the Polynome </span>
+<a name="l00037"></a>00037           <span class="keywordtype">void</span> <a class="code" href="class_polynome.html#a07fb8401f8d3774957cc23a364280528" title="Print the Polynome on the output.">toString</a>();      <span class="comment">// Print the Polynome on the output</span>
+<a name="l00038"></a>00038         
+<a name="l00039"></a>00039 };
+<a name="l00040"></a>00040 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -130,7 +130,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 19 2012 18:53:39 for Polynome Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 19 2012 20:08:51 for Polynome Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

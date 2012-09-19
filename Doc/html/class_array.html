@@ -85,7 +85,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Array Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="Array" --><!-- doxytag: inherits="Contener" --><div class="dynheader">
+<!-- doxytag: class="Array" --><!-- doxytag: inherits="Contener" -->
+<p><a class="el" href="class_array.html" title="Array based on std::vector.">Array</a> based on std::vector.  
+ <a href="class_array.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="array_8h_source.html">array.h</a>&gt;</code></p>
+<div class="dynheader">
 Inheritance diagram for Array:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_array__inherit__graph.png" border="0" usemap="#_array_inherit__map" alt="Inheritance graph"/></div>
@@ -104,11 +109,62 @@ Collaboration diagram for Array:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac53de22eede2969b8c277674aac890dd"></a><!-- doxytag: member="Array::get" ref="ac53de22eede2969b8c277674aac890dd" args="(const int &amp;index) const " -->
-double&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (const int &amp;index) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1911ffe5822c9628a4a8035c93cf8c0d"></a><!-- doxytag: member="Array::add" ref="a1911ffe5822c9628a4a8035c93cf8c0d" args="(const double &amp;data)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const double &amp;data)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae20b3dbb4aa6083679c0dea835abd861"></a><!-- doxytag: member="Array::Array" ref="ae20b3dbb4aa6083679c0dea835abd861" args="()" -->
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_array.html#ae20b3dbb4aa6083679c0dea835abd861">Array</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">COnstruct an empty <a class="el" href="class_array.html" title="Array based on std::vector.">Array</a>. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_array.html#ac53de22eede2969b8c277674aac890dd">get</a> (const int &amp;index) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_array.html#a1911ffe5822c9628a4a8035c93cf8c0d">add</a> (const double &amp;data)</td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_array.html" title="Array based on std::vector.">Array</a> based on std::vector. </p>
+<dl class="author"><dt><b>Author:</b></dt><dd>Maël BARBIN Julien BIZEUL Noémie RULLIER </dd></dl>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a1911ffe5822c9628a4a8035c93cf8c0d"></a><!-- doxytag: member="Array::add" ref="a1911ffe5822c9628a4a8035c93cf8c0d" args="(const double &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_array.html#a1911ffe5822c9628a4a8035c93cf8c0d">Array::add</a> </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>a double to add at the end of the <a class="el" href="class_array.html" title="Array based on std::vector.">Array</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_contener.html">Contener</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac53de22eede2969b8c277674aac890dd"></a><!-- doxytag: member="Array::get" ref="ac53de22eede2969b8c277674aac890dd" args="(const int &amp;index) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_array.html#ac53de22eede2969b8c277674aac890dd">Array::get</a> </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="return"><dt><b>Returns:</b></dt><dd>Return the double at the index i</dd></dl>
+<p>If the array is empty, then the returned value is 0.0 (only temporary!) </p>
+
+<p>Implements <a class="el" href="class_contener.html">Contener</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="array_8h_source.html">array.h</a></li>
 <li>src/array.cpp</li>
@@ -131,7 +187,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const double
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 19 2012 18:53:39 for Polynome Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 19 2012 20:08:51 for Polynome Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
