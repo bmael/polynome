@@ -45,7 +45,7 @@ Polynome::Polynome(){
 	  double a;
 	  cin >> a;
 	  coeff_->add(a);
-	  endl;
+	  cout << endl;
       }
       
     

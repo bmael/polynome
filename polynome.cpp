@@ -51,6 +51,8 @@ Polynome::Polynome(){
     
 }
 
+Polynome::~Polynome(){}
+
 int Polynome::getX() const {
 	return this->x_;
 }

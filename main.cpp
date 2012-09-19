@@ -4,12 +4,22 @@
 
 using namespace std;
 
+void doAction(int action,Polynome * poly){
+ switch(action){
+   case 0: return;
+	  break;
+	  
+  case 1: poly = new Polynome();
+	  break;
+ }
+}
+
 int main(int argc, char ** argv) {
  
-  Polynome * poly = new Polynome();
+  Polynome * poly;
   
   int action;
-  //Interpret the user action
+  //Display the actions that user can do
   do{
     cout << "##########################" << endl;
     cout << "##       POLYGONE       ##" << endl;
@@ -23,7 +33,12 @@ int main(int argc, char ** argv) {
     cout << "--------------------------";
     
     cin >> action;
+    
+    doAction(action,poly);
+    
   }while(action!=0);
+  
+  delete poly;
   
 return 0;
 }
