@@ -7,6 +7,10 @@ Lien du repository :
 	rubrique utiliser un agent ssh.
 
 Commande de base : 
+
+    cloner un repository : 
+	  git clone <adress du repository>
+
     ajouter un fichier : 
 	  git add <file> (accepte les expressions régulières)
     
