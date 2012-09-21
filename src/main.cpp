@@ -1,6 +1,8 @@
 #include "polynome.h"
 
 #include <iostream>
+#include <string>
+#include <sstream>
 
 using namespace std;
 
@@ -45,6 +47,7 @@ int main(int argc, char ** argv) {
   
   Polynome * poly = 0;
   
+  string s;
   int action;
   
   //Display the actions that user can do
@@ -60,9 +63,16 @@ int main(int argc, char ** argv) {
     cout << "0-------------------Quit" << endl;
     cout << "--------------------------";
     
-    cin >> action;
-    
-    doAction(action,poly);
+    //cin >> action;
+    getline(cin, s);
+    stringstream myStream(s);
+    if ( !(myStream >> action) ) {
+      cout << "This was not a number. Enter a valid option!" << endl;
+      action = 255;
+    }
+    else {
+      doAction(action,poly);
+    }
     
   }while(action!=0);
   
