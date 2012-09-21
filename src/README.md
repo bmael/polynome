@@ -12,4 +12,4 @@ Version 1.0
 - A polynome can be printed on the output.
 - A polynome can be computed.
 - 2 types of Conteners for the coefficients of the polynome. (LinkedList and Array)
-
+- The type of the coefficients contener is fixed during the compilation (Makefile)
