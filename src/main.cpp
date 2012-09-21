@@ -15,7 +15,8 @@ void doAction(int action,Polynome *& poly){
    case 0: return;
 	  break;
 	  
-  case 1: poly = new Polynome();
+  case 1: if(poly!=0) delete poly;
+	  poly = new Polynome();
 	  break;
 	  
   case 2: if(poly==0)return;
@@ -25,7 +26,8 @@ void doAction(int action,Polynome *& poly){
   case 3: if(poly==0)return;
 	  cout << "S = " << poly->eval() << endl;
 	  break;
-  default: cout << "The number " << action << " does not represent a valid option. Please choose a valid option" << endl;
+  default: cout << "The number " << action 
+		<< " does not represent a valid option. Please choose a valid option" << endl;
 	   return;
 	   break;
  }
@@ -63,7 +65,7 @@ int main(int argc, char ** argv) {
     cout << "0-------------------Quit" << endl;
     cout << "--------------------------";
     
-    //cin >> action;
+    //test the value of action
     getline(cin, s);
     stringstream myStream(s);
     if ( !(myStream >> action) ) {
