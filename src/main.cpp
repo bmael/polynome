@@ -23,6 +23,9 @@ void doAction(int action,Polynome *& poly){
   case 3: if(poly==0)return;
 	  cout << "S = " << poly->eval() << endl;
 	  break;
+  default: cout << "The number " << action << " does not represent a valid option. Please choose a valid option" << endl;
+	   return;
+	   break;
  }
 }
 
