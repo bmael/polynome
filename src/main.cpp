@@ -16,10 +16,12 @@ void doAction(int action,Polynome *& poly){
   case 1: poly = new Polynome();
 	  break;
 	  
-  case 2: poly->toString();
+  case 2: if(poly==0)return;
+	  poly->toString();
 	  break;
 	  
-  case 3: cout << "S = " << poly->eval() << endl;
+  case 3: if(poly==0)return;
+	  cout << "S = " << poly->eval() << endl;
 	  break;
  }
 }
