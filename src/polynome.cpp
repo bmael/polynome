@@ -4,7 +4,7 @@
   #if defined(list)
     #include "linkedlist.h"
   #elif defined(array)
-  
+    #include "array.h"
   #endif
 
  
@@ -18,11 +18,9 @@ using namespace std;
 Polynome::Polynome(){
     //the type of the contener is defined during the compilation of the program
     #if defined(list)
-      coeff_ = new LinkedList();
-      cout << "defined(list) for compilation" <<endl;
-      
+      coeff_ = new LinkedList();     
     #elif defined(array)
-	//TODO create the new array class and create an instance.
+	coeff_ = new Array();
     #endif
       
       //Interaction with user to create a Polynome.

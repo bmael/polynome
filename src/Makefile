@@ -1,6 +1,14 @@
 CPP = g++
-CFLAGS = -W -Wall -D list
-COEFF = linkedlist
+CFLAGS = -W -Wall
+
+#COEFF = linkedlist
+COEFF = array
+
+ifeq ($(COEFF),linkedlist) 
+	CFLAGS += -D list
+else 
+	CFLAGS += -D array
+endif
 
 main: main.o polynome.o $(COEFF).o
 	$(CPP) $(CFLAGS) -o main $^
@@ -16,9 +24,9 @@ $(COEFF).o: $(COEFF).cpp $(COEFF).h contener.h
 	
 	
 
-	
-
-
-.PHONY : clean
+.PHONY : clean mrproper
 clean:
-	rm -rf *.o main *~
+	rm -rf *.o *~
+	
+mrproper: clean
+	rm -rf main

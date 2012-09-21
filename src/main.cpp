@@ -31,6 +31,13 @@ void doAction(int action,Polynome *& poly){
  **/
 int main(int argc, char ** argv) {
  
+  //Display the type of the contener used by the application
+  #if defined(list)
+    cout << "Coefficients are store in LinkedList" << endl;
+  #elif defined(array)
+    cout << "Coefficients are store in Array" << endl;
+  #endif
+  
   Polynome * poly = 0;
   
   int action;

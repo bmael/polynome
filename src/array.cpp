@@ -1,7 +1,7 @@
 #include "array.h"
 
 /**
- * \brief COnstruct an empty Array
+ * \brief Construct an empty Array
  * */
 Array::Array() {}
 
