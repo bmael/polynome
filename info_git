@@ -30,3 +30,11 @@ Commande de base :
     pas de soucis dans la plupart des cas  : 
 	  git -am "Message du commit"
     permet de résoudre ce problème.
+
+	Création d'une branch 
+		git branch <nom de la branche>
+	
+	Changement de la branche courante
+		git checkout <nom de la branche>
+
+ 	
