@@ -1453,6 +1453,48 @@ fi
 
 } # ac_fn_c_try_cpp
 
+# ac_fn_c_try_run LINENO
+# ----------------------
+# Try to link conftest.$ac_ext, and return whether this succeeded. Assumes
+# that executables *can* be run.
+ac_fn_c_try_run ()
+{
+  as_lineno=${as_lineno-"$1"} as_lineno_stack=as_lineno_stack=$as_lineno_stack
+  if { { ac_try="$ac_link"
+case "(($ac_try" in
+  *\"* | *\`* | *\\*) ac_try_echo=\$ac_try;;
+  *) ac_try_echo=$ac_try;;
+esac
+eval ac_try_echo="\"\$as_me:${as_lineno-$LINENO}: $ac_try_echo\""
+$as_echo "$ac_try_echo"; } >&5
+  (eval "$ac_link") 2>&5
+  ac_status=$?
+  $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
+  test $ac_status = 0; } && { ac_try='./conftest$ac_exeext'
+  { { case "(($ac_try" in
+  *\"* | *\`* | *\\*) ac_try_echo=\$ac_try;;
+  *) ac_try_echo=$ac_try;;
+esac
+eval ac_try_echo="\"\$as_me:${as_lineno-$LINENO}: $ac_try_echo\""
+$as_echo "$ac_try_echo"; } >&5
+  (eval "$ac_try") 2>&5
+  ac_status=$?
+  $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
+  test $ac_status = 0; }; }; then :
+  ac_retval=0
+else
+  $as_echo "$as_me: program exited with status $ac_status" >&5
+       $as_echo "$as_me: failed program was:" >&5
+sed 's/^/| /' conftest.$ac_ext >&5
+
+       ac_retval=$ac_status
+fi
+  rm -rf conftest.dSYM conftest_ipa8_conftest.oo
+  eval $as_lineno_stack; ${as_lineno_stack:+:} unset as_lineno
+  as_fn_set_status $ac_retval
+
+} # ac_fn_c_try_run
+
 # ac_fn_c_try_link LINENO
 # -----------------------
 # Try to link conftest.$ac_ext, and return whether this succeeded.
@@ -3122,8 +3164,6 @@ fi
 		CFLAGS=" $CFLAGS -D MDouble"
 	fi
 
-COEFF="array"
-
 
 # Check whether --with-array was given.
 if test "${with_array+set}" = set; then :
@@ -3140,6 +3180,33 @@ fi
 		COEFF="linkedlist"
 	fi
 
+# Verification for function pow
+####### TODO #######
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking whether we are using a buggy GNU libc pow() " >&5
+$as_echo_n "checking whether we are using a buggy GNU libc pow() ... " >&6; }
+
+if test "$cross_compiling" = yes; then :
+  :
+else
+  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+double pow(double,int);int main(){exit(pow(0,0) == 1);}
+_ACEOF
+if ac_fn_c_try_run "$LINENO"; then :
+  buggy_pow=yes
+else
+  buggy_pow=no
+fi
+rm -f core *.core core.conftest.* gmon.out bb.out conftest$ac_exeext \
+  conftest.$ac_objext conftest.beam conftest.$ac_ext
+fi
+
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: ${buggy_pow}" >&5
+$as_echo "${buggy_pow}" >&6; }
+
+
+
+
 
 # Checks for libraries.
 
@@ -3152,7 +3219,6 @@ fi
 
 
 # Checks for library functions.
-
 for ac_func in pow
 do :
   ac_fn_c_check_func "$LINENO" "pow" "ac_cv_func_pow"

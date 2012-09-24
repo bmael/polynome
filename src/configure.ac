@@ -32,6 +32,13 @@ AC_ARG_WITH(array,[--with-array],
 
 # Verification for function pow
 ####### TODO #######
+AC_MSG_CHECKING(whether we are using a buggy GNU libc pow() )
+AC_TRY_RUN([double pow(double,int);int main(){exit(pow(0,0) == 1);}], buggy_pow=yes, buggy_pow=no,:)
+AC_MSG_RESULT(${buggy_pow})
+
+
+
+
 
 # Checks for libraries.
 

@@ -1,6 +1,6 @@
 CPP = g++
 CFLAGS = -W -Wall
-CFLAGS +=   -g -O2 -D MFloat -D MList
+CFLAGS +=   -g -O2 -D MDouble -D MList
 
 COEFF = linkedlist
 
