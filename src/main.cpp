@@ -55,7 +55,7 @@ int main(int argc, char ** argv) {
   //Display the actions that user can do
   do{
     cout << "##########################" << endl;
-    cout << "##       POLYGONE       ##" << endl;
+    cout << "##       POLYNOME       ##" << endl;
     cout << "##########################" << endl;
     
     cout << endl;
