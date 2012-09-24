@@ -1,8 +1,8 @@
 CPP = g++
 CFLAGS = -W -Wall
-CFLAGS +=   -g -O2 -D MFloat -D MList
+CFLAGS += @CFLAGS@
 
-COEFF = linkedlist
+COEFF = @COEFF@
 
 main: main.o polynome.o $(COEFF).o
 	$(CPP) $(CFLAGS) -o main $^
