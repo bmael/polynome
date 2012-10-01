@@ -4,6 +4,9 @@
 /* Define to 1 if you have the `pow' function. */
 /* #undef HAVE_POW */
 
+/* Name of package */
+#define PACKAGE "polynome"
+
 /* Define to the address where bug reports for this package should be sent. */
 #define PACKAGE_BUGREPORT "maelbar44@gmail.com"
 
@@ -21,6 +24,9 @@
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "2.0"
+
+/* Version number of package */
+#define VERSION "2.0"
 
 /* Define this to monpow if pow is buggy */
 #define pow monpow

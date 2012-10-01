@@ -1,8 +1,9 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
-
+PROG_VERSION = "2.1"
 AC_PREREQ([2.68])
 AC_INIT([Polynome], [2.0], [maelbar44@gmail.com])
+AM_INIT_AUTOMAKE([-Wno-portability])
 AC_CONFIG_SRCDIR([array.cpp])
 AC_CONFIG_HEADERS([config.h])
 
@@ -33,9 +34,9 @@ AC_ARG_WITH(array,[--with-array],
 # Verification for function pow
 ####### TODO #######
 AC_MSG_CHECKING(whether we are using a buggy GNU libc pow() )
-AC_TRY_RUN([double pow(double,int);int main(){exit(pow(0,0) == 1);}], buggy_pow=yes, buggy_pow=no,:)
+AC_TRY_RUN([double pow(double,int);int main(){exit(pow(0,0) == 1);}], buggy_pow=no, buggy_pow=yes,:)
 AC_MSG_RESULT(${buggy_pow})
-if test $buggy_pow=no;then
+if test $buggy_pow=yes;then
 	AC_DEFINE(pow,monpow,[Define this to monpow if pow is buggy])
 fi
 

@@ -60,18 +60,31 @@ PATH: /usr/local/opt/sagemath
 ## Core tests. ##
 ## ----------- ##
 
-configure:2025: checking for g++
-configure:2041: found /usr/bin/g++
-configure:2052: result: g++
-configure:2079: checking for C++ compiler version
-configure:2088: g++ --version >&5
+configure:2058: checking for a BSD-compatible install
+configure:2126: result: /usr/bin/install -c
+configure:2137: checking whether build environment is sane
+configure:2187: result: yes
+configure:2328: checking for a thread-safe mkdir -p
+configure:2367: result: /bin/mkdir -p
+configure:2380: checking for gawk
+configure:2410: result: no
+configure:2380: checking for mawk
+configure:2396: found /usr/bin/mawk
+configure:2407: result: mawk
+configure:2418: checking whether make sets $(MAKE)
+configure:2440: result: yes
+configure:2583: checking for g++
+configure:2599: found /usr/bin/g++
+configure:2610: result: g++
+configure:2637: checking for C++ compiler version
+configure:2646: g++ --version >&5
 g++ (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
 Copyright (C) 2011 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-configure:2099: $? = 0
-configure:2088: g++ -v >&5
+configure:2657: $? = 0
+configure:2646: g++ -v >&5
 Using built-in specs.
 COLLECT_GCC=g++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-linux-gnu/4.6/lto-wrapper
@@ -79,57 +92,61 @@ Target: i686-linux-gnu
 Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.6.3-1ubuntu5' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --enable-targets=all --disable-werror --with-arch-32=i686 --with-tune=generic --enable-checking=release --build=i686-linux-gnu --host=i686-linux-gnu --target=i686-linux-gnu
 Thread model: posix
 gcc version 4.6.3 (Ubuntu/Linaro 4.6.3-1ubuntu5) 
-configure:2099: $? = 0
-configure:2088: g++ -V >&5
+configure:2657: $? = 0
+configure:2646: g++ -V >&5
 g++: error: unrecognized option '-V'
 g++: fatal error: no input files
 compilation terminated.
-configure:2099: $? = 4
-configure:2088: g++ -qversion >&5
+configure:2657: $? = 4
+configure:2646: g++ -qversion >&5
 g++: error: unrecognized option '-qversion'
 g++: fatal error: no input files
 compilation terminated.
-configure:2099: $? = 4
-configure:2119: checking whether the C++ compiler works
-configure:2141: g++    conftest.cpp  >&5
-configure:2145: $? = 0
-configure:2193: result: yes
-configure:2196: checking for C++ compiler default output file name
-configure:2198: result: a.out
-configure:2204: checking for suffix of executables
-configure:2211: g++ -o conftest    conftest.cpp  >&5
-configure:2215: $? = 0
-configure:2237: result: 
-configure:2259: checking whether we are cross compiling
-configure:2267: g++ -o conftest    conftest.cpp  >&5
-configure:2271: $? = 0
-configure:2278: ./conftest
-configure:2282: $? = 0
-configure:2297: result: no
-configure:2302: checking for suffix of object files
-configure:2324: g++ -c   conftest.cpp >&5
-configure:2328: $? = 0
-configure:2349: result: o
-configure:2353: checking whether we are using the GNU C++ compiler
-configure:2372: g++ -c   conftest.cpp >&5
-configure:2372: $? = 0
-configure:2381: result: yes
-configure:2390: checking whether g++ accepts -g
-configure:2410: g++ -c -g  conftest.cpp >&5
-configure:2410: $? = 0
-configure:2451: result: yes
-configure:2522: checking for gcc
-configure:2538: found /usr/bin/gcc
-configure:2549: result: gcc
-configure:2778: checking for C compiler version
-configure:2787: gcc --version >&5
+configure:2657: $? = 4
+configure:2677: checking whether the C++ compiler works
+configure:2699: g++    conftest.cpp  >&5
+configure:2703: $? = 0
+configure:2751: result: yes
+configure:2754: checking for C++ compiler default output file name
+configure:2756: result: a.out
+configure:2762: checking for suffix of executables
+configure:2769: g++ -o conftest    conftest.cpp  >&5
+configure:2773: $? = 0
+configure:2795: result: 
+configure:2817: checking whether we are cross compiling
+configure:2825: g++ -o conftest    conftest.cpp  >&5
+configure:2829: $? = 0
+configure:2836: ./conftest
+configure:2840: $? = 0
+configure:2855: result: no
+configure:2860: checking for suffix of object files
+configure:2882: g++ -c   conftest.cpp >&5
+configure:2886: $? = 0
+configure:2907: result: o
+configure:2911: checking whether we are using the GNU C++ compiler
+configure:2930: g++ -c   conftest.cpp >&5
+configure:2930: $? = 0
+configure:2939: result: yes
+configure:2948: checking whether g++ accepts -g
+configure:2968: g++ -c -g  conftest.cpp >&5
+configure:2968: $? = 0
+configure:3009: result: yes
+configure:3043: checking for style of include used by make
+configure:3071: result: GNU
+configure:3097: checking dependency style of g++
+configure:3208: result: gcc3
+configure:3271: checking for gcc
+configure:3287: found /usr/bin/gcc
+configure:3298: result: gcc
+configure:3527: checking for C compiler version
+configure:3536: gcc --version >&5
 gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
 Copyright (C) 2011 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-configure:2798: $? = 0
-configure:2787: gcc -v >&5
+configure:3547: $? = 0
+configure:3536: gcc -v >&5
 Using built-in specs.
 COLLECT_GCC=gcc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-linux-gnu/4.6/lto-wrapper
@@ -137,36 +154,38 @@ Target: i686-linux-gnu
 Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.6.3-1ubuntu5' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --enable-targets=all --disable-werror --with-arch-32=i686 --with-tune=generic --enable-checking=release --build=i686-linux-gnu --host=i686-linux-gnu --target=i686-linux-gnu
 Thread model: posix
 gcc version 4.6.3 (Ubuntu/Linaro 4.6.3-1ubuntu5) 
-configure:2798: $? = 0
-configure:2787: gcc -V >&5
+configure:3547: $? = 0
+configure:3536: gcc -V >&5
 gcc: error: unrecognized option '-V'
 gcc: fatal error: no input files
 compilation terminated.
-configure:2798: $? = 4
-configure:2787: gcc -qversion >&5
+configure:3547: $? = 4
+configure:3536: gcc -qversion >&5
 gcc: error: unrecognized option '-qversion'
 gcc: fatal error: no input files
 compilation terminated.
-configure:2798: $? = 4
-configure:2802: checking whether we are using the GNU C compiler
-configure:2821: gcc -c   conftest.c >&5
-configure:2821: $? = 0
-configure:2830: result: yes
-configure:2839: checking whether gcc accepts -g
-configure:2859: gcc -c -g  conftest.c >&5
-configure:2859: $? = 0
-configure:2900: result: yes
-configure:2917: checking for gcc option to accept ISO C89
-configure:2981: gcc  -c -g -O2  conftest.c >&5
-configure:2981: $? = 0
-configure:2994: result: none needed
-configure:3019: checking how to run the C preprocessor
-configure:3050: gcc -E  conftest.c
-configure:3050: $? = 0
-configure:3064: gcc -E  conftest.c
-conftest.c:9:28: fatal error: ac_nonexistent.h: No such file or directory
+configure:3547: $? = 4
+configure:3551: checking whether we are using the GNU C compiler
+configure:3570: gcc -c   conftest.c >&5
+configure:3570: $? = 0
+configure:3579: result: yes
+configure:3588: checking whether gcc accepts -g
+configure:3608: gcc -c -g  conftest.c >&5
+configure:3608: $? = 0
+configure:3649: result: yes
+configure:3666: checking for gcc option to accept ISO C89
+configure:3730: gcc  -c -g -O2  conftest.c >&5
+configure:3730: $? = 0
+configure:3743: result: none needed
+configure:3765: checking dependency style of gcc
+configure:3876: result: gcc3
+configure:3896: checking how to run the C preprocessor
+configure:3927: gcc -E  conftest.c
+configure:3927: $? = 0
+configure:3941: gcc -E  conftest.c
+conftest.c:11:28: fatal error: ac_nonexistent.h: No such file or directory
 compilation terminated.
-configure:3064: $? = 1
+configure:3941: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Polynome"
@@ -175,15 +194,17 @@ configure: failed program was:
 | #define PACKAGE_STRING "Polynome 2.0"
 | #define PACKAGE_BUGREPORT "maelbar44@gmail.com"
 | #define PACKAGE_URL ""
+| #define PACKAGE "polynome"
+| #define VERSION "2.0"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:3089: result: gcc -E
-configure:3109: gcc -E  conftest.c
-configure:3109: $? = 0
-configure:3123: gcc -E  conftest.c
-conftest.c:9:28: fatal error: ac_nonexistent.h: No such file or directory
+configure:3966: result: gcc -E
+configure:3986: gcc -E  conftest.c
+configure:3986: $? = 0
+configure:4000: gcc -E  conftest.c
+conftest.c:11:28: fatal error: ac_nonexistent.h: No such file or directory
 compilation terminated.
-configure:3123: $? = 1
+configure:4000: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Polynome"
@@ -192,17 +213,19 @@ configure: failed program was:
 | #define PACKAGE_STRING "Polynome 2.0"
 | #define PACKAGE_BUGREPORT "maelbar44@gmail.com"
 | #define PACKAGE_URL ""
+| #define PACKAGE "polynome"
+| #define VERSION "2.0"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:3185: checking whether we are using a buggy GNU libc pow() 
-configure:3195: gcc -o conftest   -g -O2 -D MDouble -D MList   conftest.c  >&5
-conftest.c:9:8: warning: conflicting types for built-in function 'pow' [enabled by default]
+configure:4062: checking whether we are using a buggy GNU libc pow() 
+configure:4072: gcc -o conftest   -g -O2 -D MDouble -D MList   conftest.c  >&5
+conftest.c:11:8: warning: conflicting types for built-in function 'pow' [enabled by default]
 conftest.c: In function 'main':
-conftest.c:9:35: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
-/tmp/ccwIpa9h.o: In function `main':
-/comptes/E083551R/Bureau/polynome/src/conftest.c:9: undefined reference to `pow'
+conftest.c:11:35: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+/tmp/ccDif3z6.o: In function `main':
+/comptes/E083551R/Bureau/polynome/src/conftest.c:11: undefined reference to `pow'
 collect2: ld returned 1 exit status
-configure:3195: $? = 1
+configure:4072: $? = 1
 configure: program exited with status 1
 configure: failed program was:
 | /* confdefs.h */
@@ -212,18 +235,20 @@ configure: failed program was:
 | #define PACKAGE_STRING "Polynome 2.0"
 | #define PACKAGE_BUGREPORT "maelbar44@gmail.com"
 | #define PACKAGE_URL ""
+| #define PACKAGE "polynome"
+| #define VERSION "2.0"
 | /* end confdefs.h.  */
 | double pow(double,int);int main(){exit(pow(0,0) == 1);}
-configure:3204: result: no
-configure:3229: checking for pow
-configure:3229: gcc -o conftest   -g -O2 -D MDouble -D MList   conftest.c  >&5
-conftest.c:12:0: warning: "pow" redefined [enabled by default]
-conftest.c:8:0: note: this is the location of the previous definition
-conftest.c:33:6: warning: conflicting types for built-in function 'pow' [enabled by default]
-/tmp/cc7f75Ls.o: In function `main':
-/comptes/E083551R/Bureau/polynome/src/conftest.c:44: undefined reference to `pow'
+configure:4081: result: no
+configure:4106: checking for pow
+configure:4106: gcc -o conftest   -g -O2 -D MDouble -D MList   conftest.c  >&5
+conftest.c:14:0: warning: "pow" redefined [enabled by default]
+conftest.c:10:0: note: this is the location of the previous definition
+conftest.c:35:6: warning: conflicting types for built-in function 'pow' [enabled by default]
+/tmp/ccbo462j.o: In function `main':
+/comptes/E083551R/Bureau/polynome/src/conftest.c:46: undefined reference to `pow'
 collect2: ld returned 1 exit status
-configure:3229: $? = 1
+configure:4106: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Polynome"
@@ -232,6 +257,8 @@ configure: failed program was:
 | #define PACKAGE_STRING "Polynome 2.0"
 | #define PACKAGE_BUGREPORT "maelbar44@gmail.com"
 | #define PACKAGE_URL ""
+| #define PACKAGE "polynome"
+| #define VERSION "2.0"
 | #define pow monpow
 | /* end confdefs.h.  */
 | /* Define pow to an innocuous variant, in case <limits.h> declares pow.
@@ -272,8 +299,8 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:3229: result: no
-configure:3355: creating ./config.status
+configure:4106: result: no
+configure:4252: creating ./config.status
 
 ## ---------------------- ##
 ## Running config.status. ##
@@ -290,9 +317,10 @@ generated by GNU Autoconf 2.68.  Invocation command line was
 
 on Info1B2pc05
 
-config.status:802: creating Makefile
-config.status:802: creating config.h
-config.status:972: config.h is unchanged
+config.status:856: creating Makefile
+config.status:856: creating config.h
+config.status:1037: config.h is unchanged
+config.status:1085: executing depfiles commands
 
 ## ---------------- ##
 ## Cache variables. ##
@@ -326,34 +354,60 @@ ac_cv_env_target_alias_set=
 ac_cv_env_target_alias_value=
 ac_cv_func_pow=no
 ac_cv_objext=o
+ac_cv_path_install='/usr/bin/install -c'
+ac_cv_path_mkdir=/bin/mkdir
+ac_cv_prog_AWK=mawk
 ac_cv_prog_CPP='gcc -E'
 ac_cv_prog_ac_ct_CC=gcc
 ac_cv_prog_ac_ct_CXX=g++
 ac_cv_prog_cc_c89=
 ac_cv_prog_cc_g=yes
 ac_cv_prog_cxx_g=yes
+ac_cv_prog_make_make_set=yes
+am_cv_CC_dependencies_compiler_type=gcc3
+am_cv_CXX_dependencies_compiler_type=gcc3
 
 ## ----------------- ##
 ## Output variables. ##
 ## ----------------- ##
 
+ACLOCAL='${SHELL} /comptes/E083551R/Bureau/polynome/src/missing --run aclocal-1.11'
+AMDEPBACKSLASH='\'
+AMDEP_FALSE='#'
+AMDEP_TRUE=''
+AMTAR='$${TAR-tar}'
+AUTOCONF='${SHELL} /comptes/E083551R/Bureau/polynome/src/missing --run autoconf'
+AUTOHEADER='${SHELL} /comptes/E083551R/Bureau/polynome/src/missing --run autoheader'
+AUTOMAKE='${SHELL} /comptes/E083551R/Bureau/polynome/src/missing --run automake-1.11'
+AWK='mawk'
 CC='gcc'
+CCDEPMODE='depmode=gcc3'
 CFLAGS='  -g -O2 -D MDouble -D MList'
 COEFF='linkedlist'
 CPP='gcc -E'
 CPPFLAGS=''
 CXX='g++'
+CXXDEPMODE='depmode=gcc3'
 CXXFLAGS='-g -O2'
+CYGPATH_W='echo'
 DEFS='-DHAVE_CONFIG_H'
+DEPDIR='.deps'
 ECHO_C=''
 ECHO_N='-n'
 ECHO_T=''
 EXEEXT=''
+INSTALL_DATA='${INSTALL} -m 644'
+INSTALL_PROGRAM='${INSTALL}'
+INSTALL_SCRIPT='${INSTALL}'
+INSTALL_STRIP_PROGRAM='$(install_sh) -c -s'
 LDFLAGS=''
 LIBOBJS=''
 LIBS=''
 LTLIBOBJS=''
+MAKEINFO='${SHELL} /comptes/E083551R/Bureau/polynome/src/missing --run makeinfo'
+MKDIR_P='/bin/mkdir -p'
 OBJEXT='o'
+PACKAGE='polynome'
 PACKAGE_BUGREPORT='maelbar44@gmail.com'
 PACKAGE_NAME='Polynome'
 PACKAGE_STRING='Polynome 2.0'
@@ -361,9 +415,25 @@ PACKAGE_TARNAME='polynome'
 PACKAGE_URL=''
 PACKAGE_VERSION='2.0'
 PATH_SEPARATOR=':'
+SET_MAKE=''
 SHELL='/bin/bash'
+STRIP=''
+VERSION='2.0'
 ac_ct_CC='gcc'
 ac_ct_CXX='g++'
+am__EXEEXT_FALSE=''
+am__EXEEXT_TRUE='#'
+am__fastdepCC_FALSE='#'
+am__fastdepCC_TRUE=''
+am__fastdepCXX_FALSE='#'
+am__fastdepCXX_TRUE=''
+am__include='include'
+am__isrc=''
+am__leading_dot='.'
+am__nodep='_no'
+am__quote=''
+am__tar='$${TAR-tar} chof - "$$tardir"'
+am__untar='$${TAR-tar} xf -'
 bindir='${exec_prefix}/bin'
 build_alias=''
 datadir='${datarootdir}'
@@ -375,11 +445,13 @@ host_alias=''
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
+install_sh='${SHELL} /comptes/E083551R/Bureau/polynome/src/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'
 localstatedir='${prefix}/var'
 mandir='${datarootdir}/man'
+mkdir_p='/bin/mkdir -p'
 oldincludedir='/usr/include'
 pdfdir='${docdir}'
 prefix='/usr/local'
@@ -401,6 +473,80 @@ target_alias=''
 #define PACKAGE_STRING "Polynome 2.0"
 #define PACKAGE_BUGREPORT "maelbar44@gmail.com"
 #define PACKAGE_URL ""
+#define PACKAGE "polynome"
+#define VERSION "2.0"
 #define pow monpow
 
 configure: exit 0
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by Polynome config.status 2.0, which was
+generated by GNU Autoconf 2.68.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status config.h
+
+on Info1B2pc05
+
+config.status:856: creating config.h
+config.status:1037: config.h is unchanged
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by Polynome config.status 2.0, which was
+generated by GNU Autoconf 2.68.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status config.h
+
+on Info1B2pc05
+
+config.status:856: creating config.h
+config.status:1037: config.h is unchanged
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by Polynome config.status 2.0, which was
+generated by GNU Autoconf 2.68.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status config.h
+
+on Info1B2pc05
+
+config.status:856: creating config.h
+config.status:1037: config.h is unchanged
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by Polynome config.status 2.0, which was
+generated by GNU Autoconf 2.68.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status config.h
+
+on Info1B2pc05
+
+config.status:856: creating config.h
+config.status:1037: config.h is unchanged
