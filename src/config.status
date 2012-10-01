@@ -711,6 +711,7 @@ D["PACKAGE_VERSION"]=" \"2.0\""
 D["PACKAGE_STRING"]=" \"Polynome 2.0\""
 D["PACKAGE_BUGREPORT"]=" \"maelbar44@gmail.com\""
 D["PACKAGE_URL"]=" \"\""
+D["pow"]=" monpow"
   for (key in D) D_is_set[key] = 1
   FS = ""
 }

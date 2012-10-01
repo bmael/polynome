@@ -3203,6 +3203,11 @@ fi
 
 { $as_echo "$as_me:${as_lineno-$LINENO}: result: ${buggy_pow}" >&5
 $as_echo "${buggy_pow}" >&6; }
+if test $buggy_pow=no;then
+	
+$as_echo "@%:@define pow monpow" >>confdefs.h
+
+fi
 
 
 

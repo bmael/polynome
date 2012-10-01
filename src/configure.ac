@@ -35,6 +35,9 @@ AC_ARG_WITH(array,[--with-array],
 AC_MSG_CHECKING(whether we are using a buggy GNU libc pow() )
 AC_TRY_RUN([double pow(double,int);int main(){exit(pow(0,0) == 1);}], buggy_pow=yes, buggy_pow=no,:)
 AC_MSG_RESULT(${buggy_pow})
+if test $buggy_pow=no;then
+	AC_DEFINE(pow,monpow,[Define this to monpow if pow is buggy])
+fi
 
 
 

@@ -21,3 +21,6 @@
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "2.0"
+
+/* Define this to monpow if pow is buggy */
+#define pow monpow

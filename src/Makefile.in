@@ -19,8 +19,8 @@ $(COEFF).o: $(COEFF).cpp $(COEFF).h contener.h
 
 
 .PHONY : clean mrproper
-	clean:
-		rm -rf *.o *~
+clean:
+	rm -rf *.o *~
 
-	mrproper: clean
-		rm -rf main
+mrproper: clean
+	rm -rf main

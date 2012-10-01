@@ -37,4 +37,7 @@ class Polynome {
 	  void toString();	// Print the Polynome on the output
 	
 };
+
+double monpow(double x,int i);
+
 #endif

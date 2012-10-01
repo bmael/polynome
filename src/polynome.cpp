@@ -1,9 +1,9 @@
 #include <math.h>
 #include "polynome.h"
  
-  #if defined(list)
+  #if defined(MList)
     #include "linkedlist.h"
-  #elif defined(array)
+  #elif defined(MArray)
     #include "array.h"
   #endif
 
@@ -17,9 +17,9 @@ using namespace std;
  **/
 Polynome::Polynome(){
     //the type of the contener is defined during the compilation of the program
-    #if defined(list)
+    #if defined(MList)
       coeff_ = new LinkedList();     
-    #elif defined(array)
+    #elif defined(MArray)
 	coeff_ = new Array();
     #endif
       
@@ -120,3 +120,14 @@ void Polynome::toString(){
     }
     cout << endl;
 }
+
+double monpow(double x,int i){
+	cout << "monpow" << endl;
+	double res = 1;	
+	while(i>0){
+		res *= x;
+		i--;
+	}
+	return res;
+}
+
