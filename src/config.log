@@ -199,7 +199,7 @@ configure:3195: gcc -o conftest   -g -O2 -D MDouble -D MList   conftest.c  >&5
 conftest.c:9:8: warning: conflicting types for built-in function 'pow' [enabled by default]
 conftest.c: In function 'main':
 conftest.c:9:35: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
-/tmp/cc2C3kPP.o: In function `main':
+/tmp/ccwIpa9h.o: In function `main':
 /comptes/E083551R/Bureau/polynome/src/conftest.c:9: undefined reference to `pow'
 collect2: ld returned 1 exit status
 configure:3195: $? = 1
@@ -220,7 +220,7 @@ configure:3229: gcc -o conftest   -g -O2 -D MDouble -D MList   conftest.c  >&5
 conftest.c:12:0: warning: "pow" redefined [enabled by default]
 conftest.c:8:0: note: this is the location of the previous definition
 conftest.c:33:6: warning: conflicting types for built-in function 'pow' [enabled by default]
-/tmp/cceRIPk0.o: In function `main':
+/tmp/cc7f75Ls.o: In function `main':
 /comptes/E083551R/Bureau/polynome/src/conftest.c:44: undefined reference to `pow'
 collect2: ld returned 1 exit status
 configure:3229: $? = 1

@@ -7,6 +7,7 @@
     #include "array.h"
   #endif
 
+#define pow monpow
  
 #include <iostream>
 
