@@ -24,3 +24,4 @@ TODO
 -----
 
 - Change in the source code the defined variable according to the fact that float or double are used
+- Use automake for compilation
